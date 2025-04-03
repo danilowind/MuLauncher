@@ -9,6 +9,7 @@ using System.Text.Json;
 using System.Net.Http;
 using System.Data;
 using System.Windows.Controls;
+using System.Windows.Threading;
 //using Microsoft.Web.WebView2.Core;
 
 namespace LauncherMU;
@@ -21,8 +22,8 @@ public partial class MainWindow : Window
     private string serverUrl = "http://localhost/update/list.json";//Informação do URL onde estará a pasta de update
     private string localDirectory = System.AppDomain.CurrentDomain.BaseDirectory;//Informação do diretório onde está o client
     private string urlLauncher = "http://localhost/";//Informação da página que será carregada no navegador do launcher
-    string serverStatus = "127.0.0.1";//Informação do IP do servidor para ping
-
+    private string serverStatus = "127.0.0.1";//Informação do IP do servidor para ping
+    private string launcherExe = Process.GetCurrentProcess().MainModule.FileName;
     public MainWindow()
     {
         InitializeComponent();
@@ -66,13 +67,23 @@ public partial class MainWindow : Window
         try
         {
             // string dllPath = @"D:\Mu\Client\LauncherMU.dll";
-           // byte[] data = File.ReadAllBytes(dllPath);
-           // MessageBox.Show("Sucesso! O launcher conseguiu ler a DLL.");
+            // byte[] data = File.ReadAllBytes(dllPath);
+            // MessageBox.Show("Sucesso! O launcher conseguiu ler a DLL.");
 
             var serverFiles = await GetServerFileList();
 
             if (!Directory.Exists(localDirectory))
                 Directory.CreateDirectory(localDirectory);
+
+            string fullPath = string.Empty;
+            string directoryPath = string.Empty;
+            foreach (var file in serverFiles)
+            {
+                fullPath = Path.Combine(localDirectory, file.Name);
+                directoryPath = Path.GetDirectoryName(fullPath);
+                if (!Directory.Exists(directoryPath))
+                    Directory.CreateDirectory(directoryPath);
+            }
 
             var serverFileNames = new HashSet<string>(serverFiles.Select(f => f.Name));
             var localFiles = Directory.GetFiles(localDirectory);
@@ -81,10 +92,13 @@ public partial class MainWindow : Window
             int currentFile = 0;
 
             // Verifica arquivos locais e remove os que não estão no servidor
+            var fileName = string.Empty;
             foreach (var localFilePath in localFiles)
             {
                 currentFile++;
-                var fileName = Path.GetFileName(localFilePath);
+                fileName = Path.GetFileName(localFilePath);
+                if (localFilePath.Equals(launcherExe, StringComparison.OrdinalIgnoreCase))
+                    continue;
                 if (!serverFileNames.Contains(fileName))
                 {
                     labelAtualizacao.Content = $"Removendo arquivo obsoleto: {fileName}";

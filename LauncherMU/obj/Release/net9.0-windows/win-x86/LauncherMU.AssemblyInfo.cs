@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LauncherMU")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+964ad9ddc0301b28a8fcd48ccbda1c19355d83f5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fed5bf6f6f90e6c00bc25e3e7a973dc9f81ea082")]
 [assembly: System.Reflection.AssemblyProductAttribute("LauncherMU")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LauncherMU")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

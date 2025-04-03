@@ -18,9 +18,9 @@ public partial class MainWindow : Window
         try
         {
             string serverDirectory = textDirectory.Text;//  @"C:\xampp\htdocs\update";
-            //serverDirectory = @"C:\xampp\htdocs\update";
+            serverDirectory = @"C:\xampp\htdocs\update";
             string baseUrl = textUrl.Text;//"http://localhost/update/";
-            //baseUrl = "http://localhost/update/";
+            baseUrl = "http://localhost/update/";
 
             if (string.IsNullOrWhiteSpace(baseUrl))
                 MessageBox.Show("Por favor, insira uma URL válida");
