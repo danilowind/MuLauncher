@@ -165,7 +165,7 @@ namespace LauncherMU {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/LauncherMU;V1.0.0.0;component/opcoes.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/LauncherMU;component/opcoes.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Opcoes.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

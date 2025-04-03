@@ -8,6 +8,8 @@ using System.Security.Cryptography;
 using System.Text.Json;
 using System.Net.Http;
 using System.Data;
+using System.Windows.Controls;
+using Microsoft.Web.WebView2.Core;
 
 namespace LauncherMU;
 
@@ -17,17 +19,27 @@ public partial class MainWindow : Window
     private string caminhoMain = @"D:\Mu\Client\main.exe"; //Informação da localização do main
     private string serverUrl = "http://localhost/update/list.json";//Informação do URL onde estará a pasta de update
     private string localDirectory = @"D:\Mu\Client";//Informação do diretório onde está o client
-    private string urlLauncher = "http://localhost";//Informação da página que será carregada no navegador do launcher
+    private string urlLauncher = "http://109.110.184.10:8080/dashboard/";//Informação da página que será carregada no navegador do launcher
     string serverStatus = "127.0.0.1";//Informação do IP do servidor para ping
 
     public MainWindow()
     {
         InitializeComponent();
+        Browser();
         btnJogar.IsEnabled = false;
         btnConfiguracoes.IsEnabled = false;
         StatusServer();
-        myWebBrowser.Navigate(urlLauncher);
         StartSync();
+    }
+
+    private void Browser()
+    {
+        var url = new Uri("about:blank");
+        myWebBrowser.Source = url;
+        
+        url = new Uri(urlLauncher);
+        myWebBrowser.Source = url;
+        myWebBrowser.DefaultBackgroundColor = System.Drawing.Color.White;
     }
 
     private void StatusServer()
