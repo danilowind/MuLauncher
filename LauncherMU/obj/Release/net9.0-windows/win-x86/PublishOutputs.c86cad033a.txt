@@ -1,0 +1,2 @@
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\bin\Release\net9.0-windows\publish\win-x86\LauncherMU.pdb
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\bin\Release\net9.0-windows\publish\win-x86\LauncherMU.exe

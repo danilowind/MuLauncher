@@ -18,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Documentos\\Visual Studio 2022\\Projetos\\MuLauncher\\LauncherMU\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LauncherMU\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Documentos\\Visual Studio 2022\\Projetos\\MuLauncher\\LauncherMU\\MainWindow.xaml.cs",
+              "RelativeToolTip": "LauncherMU\\MainWindow.xaml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T05:41:03.472Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -29,19 +42,7 @@
               "ToolTip": "D:\\Documentos\\Visual Studio 2022\\Projetos\\MuLauncher\\LauncherMU\\MainWindow.xaml",
               "RelativeToolTip": "LauncherMU\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-03T01:56:08.545Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Documentos\\Visual Studio 2022\\Projetos\\MuLauncher\\LauncherMU\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "LauncherMU\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\Documentos\\Visual Studio 2022\\Projetos\\MuLauncher\\LauncherMU\\MainWindow.xaml.cs",
-              "RelativeToolTip": "LauncherMU\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABUAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T01:48:03.804Z",
+              "WhenOpened": "2025-04-03T01:56:08.545Z",
               "EditorCaption": ""
             }
           ]

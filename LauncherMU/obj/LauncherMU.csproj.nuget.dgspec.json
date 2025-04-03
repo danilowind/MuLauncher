@@ -50,10 +50,6 @@
         "net9.0-windows7.0": {
           "targetAlias": "net9.0-windows",
           "dependencies": {
-            "Microsoft.Web.WebView2": {
-              "target": "Package",
-              "version": "[1.0.3124.44, )"
-            },
             "System.Net.Http": {
               "target": "Package",
               "version": "[4.3.4, )"

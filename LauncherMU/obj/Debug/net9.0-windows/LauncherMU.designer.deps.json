@@ -8,25 +8,6 @@
     ".NETCoreApp,Version=v9.0": {
       "Microsoft.NETCore.Platforms/1.1.1": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "Microsoft.Web.WebView2/1.0.3124.44": {
-        "runtimeTargets": {
-          "runtimes/win-arm64/native/WebView2Loader.dll": {
-            "rid": "win-arm64",
-            "assetType": "native",
-            "fileVersion": "1.0.3124.44"
-          },
-          "runtimes/win-x64/native/WebView2Loader.dll": {
-            "rid": "win-x64",
-            "assetType": "native",
-            "fileVersion": "1.0.3124.44"
-          },
-          "runtimes/win-x86/native/WebView2Loader.dll": {
-            "rid": "win-x86",
-            "assetType": "native",
-            "fileVersion": "1.0.3124.44"
-          }
-        }
-      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "runtimeTargets": {
           "runtimes/debian.8-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
@@ -936,13 +917,6 @@
       "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
-    },
-    "Microsoft.Web.WebView2/1.0.3124.44": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-sQb+ACD3ILvHxztxqCWLbhYmFNf5dH0HPhVKFYg020rpeQPkadH0nkVOSsgfSyBDMLypI9iMBeD6uVcVxsKLkg==",
-      "path": "microsoft.web.webview2/1.0.3124.44",
-      "hashPath": "microsoft.web.webview2.1.0.3124.44.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "type": "package",
