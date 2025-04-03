@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\logo.png" />
+    <None Remove="Images\RenderElf.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\logo.png" />
+    <Resource Include="Images\renderElf.png" />
+  </ItemGroup>
+
+</Project>

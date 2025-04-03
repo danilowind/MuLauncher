@@ -1,0 +1,94 @@
+﻿<Window x:Class="LauncherMU.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LauncherMU"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Icon="/Images/logoMU.png"
+        Height="640" 
+        Width="840"
+        ResizeMode="NoResize"
+        Title="MuLauncher"
+        WindowStartupLocation="CenterScreen"
+        Background="#050505"
+        
+        >
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="876" Height="695">
+
+        <Button
+            x:Name="btnJogar"
+            Click="btnJogar_Click" Margin="679,563,35,89"
+            Content="JOGAR"
+            FontSize="30"
+            FontWeight="Bold"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            Foreground="White"
+            Background="#007907"
+            
+            />
+        <Button
+            FontSize="16"
+            Content="CONFIGURAÇÕES"
+            FontWeight="Bold"
+            Background="#3A2521"
+            Foreground="White"
+            x:Name="btnConfiguracoes"
+            Click="btnConfiguracoes_Click" 
+            Margin="679,611,35,54"
+            />
+        <Rectangle Margin="38,563,207,54"
+                   RadiusX="10"
+                   RadiusY="10"
+                   Fill="#182636"
+            />
+        <Image HorizontalAlignment="Left" Height="437" Margin="324,242,0,0" VerticalAlignment="Top" Width="553" Source="/Images/heroElf.png"/>
+        <WebBrowser
+            Name="myWebBrowser" Margin="38,90,245,193"
+            />
+        <Button
+            x:Name="btnFechar"
+            Click="btnFechar_Click"
+            Content="X"
+            FontSize="20"
+            FontWeight="Bold" Margin="825,32,24,633"
+
+            />
+        <Button
+            x:Name="btnMinimizar"
+            Click="btnMinimizar_Click"
+            Content="-"
+            FontSize="20"
+            FontWeight="Bold" Margin="792,32,57,633"
+
+            />
+        <Label Name="labelStatusServidor" 
+               Content="Verificando status..." 
+               HorizontalAlignment="Left" 
+               Margin="256,516,0,0" 
+               VerticalAlignment="Top" 
+               FontWeight="Bold" 
+               Foreground="White" 
+               FontSize="20" 
+               HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center"
+               />
+        <Label Name="labelAtualizacao" 
+               Content="Verificando atualizações..." 
+               HorizontalAlignment="Left" 
+               Margin="51,574,0,0" 
+               VerticalAlignment="Top" 
+               FontWeight="Bold" 
+               Foreground="White" 
+               FontSize="10" 
+               HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center"
+               />
+        <ProgressBar Margin="57,602,226,69"
+               x:Name="progressBar"            
+        />
+
+    </Grid>
+</Window>

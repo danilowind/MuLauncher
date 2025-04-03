@@ -1,0 +1,5 @@
+D:\Documentos\Visual Studio 2022\Projetos\Launcher\LauncherMU\bin\Release\net9.0-windows\publish\LauncherMU.exe
+D:\Documentos\Visual Studio 2022\Projetos\Launcher\LauncherMU\bin\Release\net9.0-windows\publish\LauncherMU.dll
+D:\Documentos\Visual Studio 2022\Projetos\Launcher\LauncherMU\bin\Release\net9.0-windows\publish\LauncherMU.deps.json
+D:\Documentos\Visual Studio 2022\Projetos\Launcher\LauncherMU\bin\Release\net9.0-windows\publish\LauncherMU.runtimeconfig.json
+D:\Documentos\Visual Studio 2022\Projetos\Launcher\LauncherMU\bin\Release\net9.0-windows\publish\LauncherMU.pdb

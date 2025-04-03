@@ -1,0 +1,28 @@
+﻿<Window x:Class="ProjetoCheck.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjetoCheck"
+        mc:Ignorable="d"
+        Icon="/Images/logo.png"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Title="Hash Files Generator" Height="420" Width="640"
+        ResizeMode="NoResize">
+    <Grid>
+        <Label Content="0%" FontSize="12" Margin="94,236,94,48" HorizontalContentAlignment="Center" x:Name="labelStatus"/>
+
+        <TextBox HorizontalAlignment="Center"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212" Height="52" x:Name="textDirectory" Margin="0,44,0,0"/>
+        <TextBox HorizontalAlignment="Center"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212" x:Name="textUrl" Height="52" Margin="0,158,0,0"/>
+        <Image HorizontalAlignment="Left" Height="310" Margin="426,44,0,0" VerticalAlignment="Top" Width="319" Source="/Images/RenderElf.png"/>
+        <Button Content="Gerar Hash" HorizontalAlignment="Center" Margin="0,302,0,0" VerticalAlignment="Top" Height="59" Width="146" x:Name="btnClick" Click="btnGerarCheckSum_Click" FontSize="20" Background="#4CAF50" Foreground="White"/>
+        <Label Content="URL ARQUIVOS" HorizontalAlignment="Left" Margin="208,124,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="DIRETÓRIO" HorizontalAlignment="Left" Margin="208,10,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <ProgressBar x:Name="progressBar" Minimum="0" Maximum="100" Margin="94,262,94,0" VerticalAlignment="Top" Height="24" BorderBrush="Black" />
+
+
+
+
+    </Grid>
+</Window>

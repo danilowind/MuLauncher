@@ -1,0 +1,148 @@
+﻿<Window x:Class="LauncherMU.Opcoes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LauncherMU"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Height="400" Width="350"
+        ResizeMode="NoResize"
+        Title="Opcoes"
+        WindowStartupLocation="CenterScreen"
+        Background="#050505"
+        
+        >
+    <Grid>
+        <Label Content="CONFIGURAÇÕES" 
+               HorizontalAlignment="Center" 
+               Margin="0,10,0,0" 
+               VerticalAlignment="Top" 
+               FontWeight="Bold" 
+               Foreground="White"
+               FontSize="30"
+         />
+        <Label Content="SOM" 
+               HorizontalAlignment="Left" 
+               Margin="19,296,0,0" 
+               VerticalAlignment="Top" 
+               FontWeight="Bold" 
+               Foreground="White"
+               FontSize="15"
+        />
+        <Label Content="MODO JANELA" 
+               Margin="112,296,112,0" 
+               VerticalAlignment="Top" 
+               FontWeight="Bold" 
+               Foreground="White"
+               FontSize="15"
+        />
+        <Label Content="MUSIC" 
+               HorizontalAlignment="Left" 
+               Margin="274,296,0,0" 
+               VerticalAlignment="Top" 
+               FontWeight="Bold" 
+               Foreground="White"
+               FontSize="15"
+        />
+        <Label Content="IDIOMA" 
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Top" 
+               FontWeight="Bold" 
+               Foreground="White"
+               FontSize="15" Margin="0,212,0,0"
+               />
+        <Label Content="640X480" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               FontWeight="Bold" 
+               Foreground="White"
+               FontSize="15" Margin="47,75,0,0"
+               />
+        <Label Content="800X600" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               FontWeight="Bold" 
+               Foreground="White"
+               FontSize="15" Margin="47,95,0,0"
+               />
+        <Label Content="1024X768" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               FontWeight="Bold" 
+               Foreground="White"
+               FontSize="15" Margin="46,116,0,0"
+               />
+        <Label Content="1280X1024" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               FontWeight="Bold" 
+               Foreground="White"
+               FontSize="15" Margin="240,75,0,0"
+               />
+        <Label Content="1366X768" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               FontWeight="Bold" 
+               Foreground="White"
+               FontSize="15" Margin="241,95,0,0"
+               />
+        <Label Content="1600X1280" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               FontWeight="Bold" 
+               Foreground="White"
+               FontSize="15" Margin="241,116,0,0"
+               />
+        <Label Content="LOGIN" 
+        HorizontalAlignment="Left" 
+        VerticalAlignment="Top" 
+        FontWeight="Bold" 
+        Foreground="White"
+        FontSize="15" Margin="67,155,0,0"
+        />
+        <Label Content="SENHA" 
+        HorizontalAlignment="Left" 
+        VerticalAlignment="Top" 
+        FontWeight="Bold" 
+        Foreground="White"
+        FontSize="15" Margin="225,155,0,0"
+        />
+        <Button HorizontalAlignment="Left" Margin="232,341,0,0" VerticalAlignment="Top"
+                Foreground="White"
+                Background="#007907"
+                x:Name="btnAplicar"
+                Click="btnAplicar_Click"
+                Content="APLICAR" Height="30" Width="85"
+                FontWeight="Bold"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                FontSize="15"
+                />
+        <Button 
+            HorizontalAlignment="Left" Margin="40,341,0,0" VerticalAlignment="Top"
+            Foreground="White"
+            Background="#A32722"
+            x:Name="btnCancelar"
+            FontWeight="Bold"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            Click="btnCancelar_Click"
+            Content="CANCELAR" Height="30" Width="85"
+            FontSize="15"
+            />
+        <CheckBox x:Name="checkBoxSom" HorizontalAlignment="Left" Margin="33,281,0,0" VerticalAlignment="Top" Width="16" Height="15" Checked="checkBoxSom_Checked" Unchecked="checkBoxSom_Unchecked"/>
+        <CheckBox x:Name="checkBoxModoJanela" HorizontalAlignment="Center" Margin="0,281,0,0" VerticalAlignment="Top" Width="16" Height="15" Checked="checkBoxModoJanela_Checked" Unchecked="checkBoxModoJanela_Unchecked"/>
+        <CheckBox x:Name="checkBoxMusic" HorizontalAlignment="Left" Margin="295,281,0,0" VerticalAlignment="Top" Width="16" Height="15" Checked="checkBoxMusic_Checked" Unchecked="checkBoxMusic_Unchecked"/>
+        <ComboBox x:Name="comboBoxIdioma" Width="200" Height="30" VerticalAlignment="Top" Margin="74,242,76,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <RadioButton x:Name="radioButton1" HorizontalAlignment="Left" Margin="32,83,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton2" HorizontalAlignment="Left" Margin="32,104,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton3" HorizontalAlignment="Left" Margin="32,127,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton4" HorizontalAlignment="Left" Margin="228,83,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton5" HorizontalAlignment="Left" Margin="228,104,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton6" HorizontalAlignment="Left" Margin="228,127,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxLogin" HorizontalAlignment="Left" Margin="35,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="textBoxSenha" HorizontalAlignment="Left" Margin="195,181,0,0"  VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>
