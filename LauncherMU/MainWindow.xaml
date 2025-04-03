@@ -87,6 +87,17 @@
                HorizontalContentAlignment="Center" 
                VerticalContentAlignment="Center"
                />
+        <Label Name="labelAtualizacaoPorcentagem" 
+               Content="0%" 
+               HorizontalAlignment="Left" 
+               Margin="571,563,0,0" 
+               VerticalAlignment="Top" 
+               FontWeight="Bold" 
+               Foreground="White" 
+               FontSize="20" 
+               HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center"
+       />
         <ProgressBar Margin="57,602,226,69"
                x:Name="progressBar"            
         />

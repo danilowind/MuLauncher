@@ -61,6 +61,13 @@ public partial class MainWindow : Window
 
     private async void StartSync()
     {
+        string fullPath = string.Empty;
+        string directoryPath = string.Empty;
+        string fileName = string.Empty;
+        string localPath = string.Empty;
+        int currentFile = 0;
+        float progress = 0;
+
         labelAtualizacao.Content = "Obtendo lista de arquivos do servidor...";
         await Task.Delay(500);
         btnConfiguracoes.IsEnabled = true;
@@ -75,8 +82,7 @@ public partial class MainWindow : Window
             if (!Directory.Exists(localDirectory))
                 Directory.CreateDirectory(localDirectory);
 
-            string fullPath = string.Empty;
-            string directoryPath = string.Empty;
+
             foreach (var file in serverFiles)
             {
                 fullPath = Path.Combine(localDirectory, file.Name);
@@ -88,40 +94,44 @@ public partial class MainWindow : Window
             var serverFileNames = new HashSet<string>(serverFiles.Select(f => f.Name));
             var localFiles = Directory.GetFiles(localDirectory);
 
-            int totalFiles = serverFiles.Length + localFiles.Length;
-            int currentFile = 0;
+            int totalFiles = serverFiles.Length;
 
             // Verifica arquivos locais e remove os que não estão no servidor
-            var fileName = string.Empty;
             foreach (var localFilePath in localFiles)
             {
                 currentFile++;
+                progress = (currentFile / totalFiles) * 100;
                 fileName = Path.GetFileName(localFilePath);
                 if (localFilePath.Equals(launcherExe, StringComparison.OrdinalIgnoreCase))
                     continue;
                 if (!serverFileNames.Contains(fileName))
                 {
                     labelAtualizacao.Content = $"Removendo arquivo obsoleto: {fileName}";
+                    labelAtualizacaoPorcentagem.Content = $"{progress.ToString("0.00")}%";
                     File.Delete(localFilePath);
                 }
-                progressBar.Value = (int)(currentFile / totalFiles * 100);
+                progressBar.Value = progress;
             }
-
+            
             // Baixa ou atualiza arquivos do servidor
-            string localPath = "";
             foreach (var file in serverFiles)
             {
                 currentFile++;
+                progress = ((float)currentFile / (float)totalFiles) * 100;
                 localPath = Path.Combine(localDirectory, file.Name);
 
                 if (!File.Exists(localPath) || !IsFileUpToDate(localPath, file.Hash))
                 {
                     labelAtualizacao.Content = $"Baixando {file.Name}... ({currentFile}/{totalFiles})";
+                    labelAtualizacaoPorcentagem.Content = $"{progress.ToString("0.00")}%";
                     await DownloadFile(file.Url, localPath);
                 }
-                progressBar.Value = (int)(currentFile / totalFiles * 100);
+                progressBar.Value = progress;
             }
+            
             labelAtualizacao.Content = "Sincronização concluída!";
+            labelAtualizacaoPorcentagem.Content = "100%";
+            progressBar.Value = 100;
             btnJogar.IsEnabled = true;
         }
         catch (Exception ex)
