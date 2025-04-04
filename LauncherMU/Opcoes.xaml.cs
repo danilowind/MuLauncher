@@ -83,14 +83,14 @@ namespace LauncherMU
                 comboBoxIdioma.SelectedIndex = 1;
                 Lang = 3;
             }
-            /*if (String.Compare(Convert.ToString(reg.GetValue("ID", RegistryValueKind.String)), "String", true) != 0)
+            if (String.Compare(Convert.ToString(reg.GetValue("ID", RegistryValueKind.String)), "String", true) != 0)
             {
                 textBoxLogin.Text = Convert.ToString(reg.GetValue("ID", RegistryValueKind.String));
             }
             if (String.Compare(Convert.ToString(reg.GetValue("PW", RegistryValueKind.String)), "String", true) != 0)
             {
-                textBoxSenha.Text = Convert.ToString(reg.GetValue("PW", RegistryValueKind.String));
-            }*/
+                textBoxSenha.Password = Convert.ToString(reg.GetValue("PW", RegistryValueKind.String));
+            }
         }
 
         private void btnAplicar_Click(object sender, RoutedEventArgs e)
@@ -123,11 +123,12 @@ namespace LauncherMU
             if (reg.GetValue("LangSelection") == null)
                 reg.SetValue("LangSelection", "Eng", RegistryValueKind.String);
 
-            /*if (reg.GetValue("ID") == null)
+            if (reg.GetValue("ID") == null)
                 reg.SetValue("ID", textBoxLogin.Text, RegistryValueKind.String);
+
             if (reg.GetValue("PW") == null)
-                reg.SetValue("PW", textBoxSenha.Text, RegistryValueKind.String);
-            */
+                reg.SetValue("PW", textBoxSenha.Password, RegistryValueKind.String);
+
             if (comboBoxIdioma.SelectedIndex == 0)
                 reg.SetValue("LangSelection", "Por", RegistryValueKind.String);
             else if (comboBoxIdioma.SelectedIndex == 1)
