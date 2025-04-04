@@ -19,8 +19,8 @@ public partial class MainWindow : Window
     private string caminhoMain = System.AppDomain.CurrentDomain.BaseDirectory + "main.exe"; //Informação da localização do main
     private string serverUrl = "https://localhost/updates/list.json";//Informação do URL onde estará a pasta de update
     private string localDirectory = System.AppDomain.CurrentDomain.BaseDirectory;//Informação do diretório onde está o client
-    private string urlLauncher = "https://localhost/dashboard/";//Informação da página que será carregada no navegador do launcher
-    private string serverIp = "localhost";//Informação do IP do servidor para ping
+    private string urlLauncher = "https://localhost";//Informação da página que será carregada no navegador do launcher
+    private string serverIp = "127.0.0.1";//Informação do IP do servidor para ping
     private int port = 55901;
     private string launcherExe = Process.GetCurrentProcess().MainModule.FileName;
     public MainWindow()
@@ -110,7 +110,7 @@ public partial class MainWindow : Window
                 {
                     labelAtualizacao.Content = $"Removendo arquivo obsoleto: {fileName}";
                     labelAtualizacaoPorcentagem.Content = $"{progress.ToString("0.00")}%";
-                    //File.Delete(localFilePath);
+                    File.Delete(localFilePath);
                 }
                 progressBar.Value = progress;
             }
@@ -126,7 +126,7 @@ public partial class MainWindow : Window
                 {
                     labelAtualizacao.Content = $"Baixando {file.Name}... ({currentFile}/{totalFiles})";
                     labelAtualizacaoPorcentagem.Content = $"{progress.ToString("0.00")}%";
-                    // await DownloadFile(file.Url, localPath);
+                    await DownloadFile(file.Url, localPath);
                 }
                 progressBar.Value = progress;
             }

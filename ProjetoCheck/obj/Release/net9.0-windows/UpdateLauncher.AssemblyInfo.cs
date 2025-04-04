@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UpdateLauncher")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de8252f105c462cb09cde40bad7b4c6bb7da32bf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb778b199cc1aea96fa1d71fc7e5f76b98c6cd05")]
 [assembly: System.Reflection.AssemblyProductAttribute("UpdateLauncher")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UpdateLauncher")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
