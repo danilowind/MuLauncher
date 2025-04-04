@@ -1,2 +1,7 @@
 D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\bin\Release\net9.0-windows\publish\win-x86\LauncherMU.pdb
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\bin\Release\net9.0-windows\publish\win-x86\runtimes\win-x86\native\WebView2Loader.dll
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\bin\Release\net9.0-windows\publish\win-x86\WebView2Loader.dll
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\bin\Release\net9.0-windows\publish\win-x86\Microsoft.Web.WebView2.Core.xml
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\bin\Release\net9.0-windows\publish\win-x86\Microsoft.Web.WebView2.WinForms.xml
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\bin\Release\net9.0-windows\publish\win-x86\Microsoft.Web.WebView2.Wpf.xml
 D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\bin\Release\net9.0-windows\publish\win-x86\LauncherMU.exe

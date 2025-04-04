@@ -43,3 +43,15 @@ D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\obj\Debug\net9.0
 D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\obj\Debug\net9.0-windows\LauncherMU.pdb
 D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\obj\Debug\net9.0-windows\LauncherMU.genruntimeconfig.cache
 D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\obj\Debug\net9.0-windows\ref\LauncherMU.dll
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\obj\Debug\net9.0-windows\LauncherMU.csproj.AssemblyReference.cache
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\obj\Debug\net9.0-windows\LauncherMU_Content.g.cs
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\bin\Debug\net9.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\bin\Debug\net9.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\bin\Debug\net9.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\bin\Debug\net9.0-windows\Microsoft.Web.WebView2.Core.dll
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\bin\Debug\net9.0-windows\Microsoft.Web.WebView2.WinForms.dll
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\bin\Debug\net9.0-windows\Microsoft.Web.WebView2.Wpf.dll
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\bin\Debug\net9.0-windows\Microsoft.Web.WebView2.Core.xml
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\bin\Debug\net9.0-windows\Microsoft.Web.WebView2.WinForms.xml
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\bin\Debug\net9.0-windows\Microsoft.Web.WebView2.Wpf.xml
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\obj\Debug\net9.0-windows\LauncherMU.csproj.Up2Date

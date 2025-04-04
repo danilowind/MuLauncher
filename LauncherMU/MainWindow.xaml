@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
         xmlns:local="clr-namespace:LauncherMU"
         mc:Ignorable="d"
         WindowStyle="None"
@@ -46,7 +46,7 @@
                    Fill="#182636"
             />
         <Image HorizontalAlignment="Left" Height="437" Margin="324,242,0,0" VerticalAlignment="Top" Width="553" Source="/Images/heroElf.png"/>
-        <WebBrowser
+        <wv2:WebView2
             x:Name="myWebBrowser" Margin="38,90,245,193"
             />
         <Button

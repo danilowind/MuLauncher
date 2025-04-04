@@ -8,9 +8,7 @@ using System.Security.Cryptography;
 using System.Text.Json;
 using System.Net.Http;
 using System.Data;
-using System.Windows.Controls;
-using System.Windows.Threading;
-//using Microsoft.Web.WebView2.Core;
+using Microsoft.Web.WebView2.Core;
 
 namespace LauncherMU;
 
@@ -19,10 +17,11 @@ public partial class MainWindow : Window
     private static readonly HttpClient httpClientclient = new HttpClient();
 
     private string caminhoMain = System.AppDomain.CurrentDomain.BaseDirectory + "main.exe"; //Informação da localização do main
-    private string serverUrl = "http://localhost/update/list.json";//Informação do URL onde estará a pasta de update
+    private string serverUrl = "https://localhost/updates/list.json";//Informação do URL onde estará a pasta de update
     private string localDirectory = System.AppDomain.CurrentDomain.BaseDirectory;//Informação do diretório onde está o client
-    private string urlLauncher = "http://localhost/";//Informação da página que será carregada no navegador do launcher
-    private string serverStatus = "127.0.0.1";//Informação do IP do servidor para ping
+    private string urlLauncher = "https://localhost/dashboard/";//Informação da página que será carregada no navegador do launcher
+    private string serverIp = "localhost";//Informação do IP do servidor para ping
+    private int port = 55901;
     private string launcherExe = Process.GetCurrentProcess().MainModule.FileName;
     public MainWindow()
     {
@@ -34,20 +33,23 @@ public partial class MainWindow : Window
         StartSync();
     }
 
-    private void Browser()
+    private async void Browser()
     {
-        // var url = new Uri("about:blank");
-        //myWebBrowser.Source = url;
-        
-        //url = new Uri(urlLauncher);
-        //myWebBrowser.Source = url;
-        myWebBrowser.Navigate(urlLauncher);
-        //myWebBrowser.DefaultBackgroundColor = System.Drawing.Color.White;
+        string runtimePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "libs");
+        var env = await CoreWebView2Environment.CreateAsync(null, runtimePath); 
+        await myWebBrowser.EnsureCoreWebView2Async(env);
+        myWebBrowser.DefaultBackgroundColor = System.Drawing.Color.White;
+        var url = new Uri("about:blank");
+        myWebBrowser.Source = url;
+
+        url = new Uri(urlLauncher);
+        myWebBrowser.Source = url;  
     }
 
     private void StatusServer()
     {
-        if (PingStatusServer.CheckServerPing(serverStatus))
+        
+        if (PingStatusServer.CheckServerPing(serverIp, port))
         {
             labelStatusServidor.Content = "Servidor online";
             labelStatusServidor.Foreground = new SolidColorBrush(Colors.Green);
@@ -108,7 +110,7 @@ public partial class MainWindow : Window
                 {
                     labelAtualizacao.Content = $"Removendo arquivo obsoleto: {fileName}";
                     labelAtualizacaoPorcentagem.Content = $"{progress.ToString("0.00")}%";
-                    File.Delete(localFilePath);
+                    //File.Delete(localFilePath);
                 }
                 progressBar.Value = progress;
             }
@@ -124,7 +126,7 @@ public partial class MainWindow : Window
                 {
                     labelAtualizacao.Content = $"Baixando {file.Name}... ({currentFile}/{totalFiles})";
                     labelAtualizacaoPorcentagem.Content = $"{progress.ToString("0.00")}%";
-                    await DownloadFile(file.Url, localPath);
+                    // await DownloadFile(file.Url, localPath);
                 }
                 progressBar.Value = progress;
             }
