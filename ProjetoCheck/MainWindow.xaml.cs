@@ -18,7 +18,7 @@ public partial class MainWindow : Window
         try
         {
             string serverDirectory = textDirectory.Text;//  @"C:\xampp\htdocs\update";
-            serverDirectory = @"D:\Mu\Sources\97d\Client";
+            serverDirectory = @"C:\\xampp\\htdocs\\updates";
             string baseUrl = textUrl.Text;//"https://localhost/updates/";
             baseUrl = "https://localhost/updates/";
 
@@ -64,5 +64,15 @@ public partial class MainWindow : Window
         {
             MessageBox.Show($"Ocorreu um erro: {ex.Message} \n Verifique se o caminho do diretório está correto");
         }
+    }
+
+    private void btnFechar_Click(object sender, RoutedEventArgs e)
+    {
+        this.Close();
+    }
+
+    private void btnMinimizar_Click(object sender, RoutedEventArgs e)
+    {
+        this.WindowState = WindowState.Minimized;
     }
 }

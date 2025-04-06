@@ -1,0 +1,2 @@
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\ProjetoCheck\bin\Release\net9.0-windows\publish\win-x86\UpdateLauncher.pdb
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\ProjetoCheck\bin\Release\net9.0-windows\publish\win-x86\UpdateLauncher.exe

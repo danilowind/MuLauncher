@@ -26,11 +26,11 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-        Browser();
         btnJogar.IsEnabled = false;
         btnConfiguracoes.IsEnabled = false;
         StatusServer();
         StartSync();
+        Browser();
     }
 
     private async void Browser()

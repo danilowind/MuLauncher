@@ -1,12 +1,85 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Documentos\\Visual Studio 2022\\Projetos\\MuLauncher\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5237EF-D142-5758-AEFE-BDD01BDB2968}|LauncherMU\\LauncherMU.csproj|d:\\documentos\\visual studio 2022\\projetos\\mulauncher\\launchermu\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A5237EF-D142-5758-AEFE-BDD01BDB2968}|LauncherMU\\LauncherMU.csproj|solutionrelative:launchermu\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6830083-B5F5-A907-D60C-1C57DF06458B}|ProjetoCheck\\UpdateLauncher.csproj|d:\\documentos\\visual studio 2022\\projetos\\mulauncher\\projetocheck\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6830083-B5F5-A907-D60C-1C57DF06458B}|ProjetoCheck\\UpdateLauncher.csproj|solutionrelative:projetocheck\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6830083-B5F5-A907-D60C-1C57DF06458B}|ProjetoCheck\\UpdateLauncher.csproj|d:\\documentos\\visual studio 2022\\projetos\\mulauncher\\projetocheck\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A6830083-B5F5-A907-D60C-1C57DF06458B}|ProjetoCheck\\UpdateLauncher.csproj|solutionrelative:projetocheck\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5237EF-D142-5758-AEFE-BDD01BDB2968}|LauncherMU\\LauncherMU.csproj|d:\\documentos\\visual studio 2022\\projetos\\mulauncher\\launchermu\\opcoes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A5237EF-D142-5758-AEFE-BDD01BDB2968}|LauncherMU\\LauncherMU.csproj|solutionrelative:launchermu\\opcoes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Documentos\\Visual Studio 2022\\Projetos\\MuLauncher\\ProjetoCheck\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "ProjetoCheck\\MainWindow.xaml",
+              "ToolTip": "D:\\Documentos\\Visual Studio 2022\\Projetos\\MuLauncher\\ProjetoCheck\\MainWindow.xaml",
+              "RelativeToolTip": "ProjetoCheck\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-05T05:18:18.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Documentos\\Visual Studio 2022\\Projetos\\MuLauncher\\ProjetoCheck\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ProjetoCheck\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Documentos\\Visual Studio 2022\\Projetos\\MuLauncher\\ProjetoCheck\\MainWindow.xaml.cs",
+              "RelativeToolTip": "ProjetoCheck\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAYwBYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:18:16.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Documentos\\Visual Studio 2022\\Projetos\\MuLauncher\\LauncherMU\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LauncherMU\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Documentos\\Visual Studio 2022\\Projetos\\MuLauncher\\LauncherMU\\MainWindow.xaml.cs",
+              "RelativeToolTip": "LauncherMU\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T18:36:04.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Opcoes.xaml.cs",
+              "DocumentMoniker": "D:\\Documentos\\Visual Studio 2022\\Projetos\\MuLauncher\\LauncherMU\\Opcoes.xaml.cs",
+              "RelativeDocumentMoniker": "LauncherMU\\Opcoes.xaml.cs",
+              "ToolTip": "D:\\Documentos\\Visual Studio 2022\\Projetos\\MuLauncher\\LauncherMU\\Opcoes.xaml.cs",
+              "RelativeToolTip": "LauncherMU\\Opcoes.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T18:36:01.472Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

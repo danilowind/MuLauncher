@@ -20,7 +20,29 @@
         <Label Content="URL ARQUIVOS" HorizontalAlignment="Left" Margin="208,124,0,0" VerticalAlignment="Top" FontSize="18"/>
         <Label Content="DIRETÓRIO" HorizontalAlignment="Left" Margin="208,10,0,0" VerticalAlignment="Top" FontSize="18"/>
         <ProgressBar x:Name="progressBar" Minimum="0" Maximum="100" Margin="94,262,94,0" VerticalAlignment="Top" Height="24" BorderBrush="Black" />
+        <Button
+    x:Name="btnFechar"
+    Click="btnFechar_Click"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+    Content="X"
+    FontSize="20"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+    FontWeight="Bold" Margin="611,1,0,0" Width="27" 
+    Height="30"
+    />
+        <Button
+    x:Name="btnMinimizar"
+    Click="btnMinimizar_Click"
+    Content="-"
+    FontSize="20"
+    FontWeight="Bold" 
+    HorizontalContentAlignment="Center"
+    VerticalContentAlignment="Center"
+    Margin="585,1,31,0"  VerticalAlignment="Top" Height="30"
 
+    />
 
 
 

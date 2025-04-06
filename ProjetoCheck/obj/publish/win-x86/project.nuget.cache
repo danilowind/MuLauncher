@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "Zbom7w5TXDc=",
+  "success": true,
+  "projectFilePath": "D:\\Documentos\\Visual Studio 2022\\Projetos\\MuLauncher\\ProjetoCheck\\UpdateLauncher.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Danilo Dias\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.3\\microsoft.net.illink.tasks.9.0.3.nupkg.sha512",
+    "C:\\Users\\Danilo Dias\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\9.0.3\\microsoft.netcore.app.runtime.win-x86.9.0.3.nupkg.sha512",
+    "C:\\Users\\Danilo Dias\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\9.0.3\\microsoft.windowsdesktop.app.runtime.win-x86.9.0.3.nupkg.sha512",
+    "C:\\Users\\Danilo Dias\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\9.0.3\\microsoft.aspnetcore.app.runtime.win-x86.9.0.3.nupkg.sha512",
+    "C:\\Users\\Danilo Dias\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\9.0.3\\microsoft.netcore.app.crossgen2.win-x64.9.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
