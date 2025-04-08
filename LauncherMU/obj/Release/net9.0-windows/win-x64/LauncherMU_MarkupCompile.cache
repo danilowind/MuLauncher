@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\Documentos\Visual Studio 2022\Projetos\Launcher\LauncherMU\obj\Release\net9.0-windows\win-x64\
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\obj\Release\net9.0-windows\win-x64\
 LauncherMU
 none
 false
 TRACE;RELEASE;NET;NET9_0;NETCOREAPP
-D:\Documentos\Visual Studio 2022\Projetos\Launcher\LauncherMU\App.xaml
+D:\Documentos\Visual Studio 2022\Projetos\MuLauncher\LauncherMU\App.xaml
 21150812230
-
+1595195809
 71469006382
-200-1310591092
+203-1647431363
 MainWindow.xaml;Opcoes.xaml;
 
 False

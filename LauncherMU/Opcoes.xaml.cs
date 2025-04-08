@@ -123,12 +123,6 @@ namespace LauncherMU
             if (reg.GetValue("LangSelection") == null)
                 reg.SetValue("LangSelection", "Eng", RegistryValueKind.String);
 
-            if (reg.GetValue("ID") == null)
-                reg.SetValue("ID", textBoxLogin.Text, RegistryValueKind.String);
-
-            if (reg.GetValue("PW") == null)
-                reg.SetValue("PW", textBoxSenha.Password, RegistryValueKind.String);
-
             if (comboBoxIdioma.SelectedIndex == 0)
                 reg.SetValue("LangSelection", "Por", RegistryValueKind.String);
             else if (comboBoxIdioma.SelectedIndex == 1)
@@ -140,6 +134,9 @@ namespace LauncherMU
             reg.SetValue("SoundOnOFF", Som, RegistryValueKind.DWord);
             reg.SetValue("Resolution", Res, RegistryValueKind.DWord);
             reg.SetValue("WindowMode", WindowMode, RegistryValueKind.DWord);
+            reg.SetValue("ID", textBoxLogin.Text, RegistryValueKind.String);
+            reg.SetValue("PW", textBoxSenha.Password, RegistryValueKind.String);
+
             reg.Close();
 
             this.DialogResult = true;
